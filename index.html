@@ -549,12 +549,11 @@
   }
   @media (max-width: 480px) {
     .log-table-head, .log-table-row {
-      grid-template-columns: 1fr 56px 56px;
+      grid-template-columns: 1fr 52px 52px 52px 52px;
       font-size: 10px;
     }
-    /* hide A1 columns on very small screens */
-    .log-table-head span:nth-child(n+5),
-    .log-table-row span:nth-child(n+5) { display: none; }
+    .hist-table-wrap { overflow-x: auto; }
+    #log-table-wrap  { overflow-x: auto; }
   }
 
   /* ── MOBILE ── */
